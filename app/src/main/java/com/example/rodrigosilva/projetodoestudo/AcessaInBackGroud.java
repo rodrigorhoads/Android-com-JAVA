@@ -22,7 +22,6 @@ import java.net.URL;
  */
 
 public class AcessaInBackGroud extends AsyncTask<URL,Void,String> {
-
     private Activity activity;
 
     public AcessaInBackGroud(BuscagGitHubActivity activity){
