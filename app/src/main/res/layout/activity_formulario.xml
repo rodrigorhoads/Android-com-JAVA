@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.rodrigosilva.projetodoestudo.FormularioActivity">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="225dp">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/iv_foto_formulario"
+                android:src="@drawable/user_2"
+                android:background="#5c95f1"
+                />
+
+            <Button android:id="@+id/btn_adicionar_foto"
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/fundo_camera"
+                ></Button>
+        </RelativeLayout>
+
+        <EditText
+            android:paddingTop="16dp"
+            android:layout_margin="10dp"
+            android:id="@+id/edt_nome_pessoa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome" />
+
+        <EditText
+            android:id="@+id/edt_endereco_pessoa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Endereco" />
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/edt_site_pessoa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Site" />
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/edt_telefone_pessoa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefone" />
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/edt_email_pessoa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail" />
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/edt_senha_pessoa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Senha" />
+
+        <RatingBar
+            android:layout_margin="10dp"
+            android:id="@+id/edt_nota_pessoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:max="10"
+            android:numStars="5" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_editarSenha"
+            android:visibility="invisible"
+            android:text="Alterar Senha"
+            android:background="#de4328"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+</ScrollView>
